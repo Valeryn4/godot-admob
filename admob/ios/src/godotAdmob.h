@@ -1,6 +1,9 @@
 #ifndef GODOT_ADMOB_H
 #define GODOT_ADMOB_H
 
+#include <version_generated.gen.h>#ifndef GODOT_ADMOB_H
+#define GODOT_ADMOB_H
+
 #include <version_generated.gen.h>
 
 #include "reference.h"
@@ -29,6 +32,9 @@ class GodotAdmob : public Reference {
     OBJ_TYPE(GodotAdmob, Reference);
 #endif
 
+    bool initialized;
+    static GodotAdmob *instance; //<<<< STATIC
+    
     bannerPtr banner;
     interstitialPtr interstitial;
     rewardedPtr rewarded;
